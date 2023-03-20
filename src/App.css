@@ -1,10 +1,117 @@
-.App {
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note {
+  background-color: #fbf2df;
+  max-width: 300px;
+  padding: 5px 15px;
+  margin: 10px 20px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  border-radius: 10px;
+  float: left;
+}
+body {
+  background-color: #fcf6e9;
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+}
+
+.note h1 {
+  font-size: 32px;
+  color: #282c34;
+  margin-top: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note p {
+  font-size: 16px;
+  color: #282c34;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.header img {
+  width: 100px;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+}
+.note button {
+  position: relative;
+  float: right;
+  border-radius: 10px;
+  color: white;
+  background-color: #282c34;
+  border: none;
+  width: 48px;
+  height: 32px;
+  cursor: pointer;
+  outline: none;
+}
+
+.note button:hover {
+  background-color: #f06161;
+  color: #282c34;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.4em;
+  font-family: inherit;
+  resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+  font-weight: bold;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #282c34;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 48px;
+  height: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+form button:hover {
+  background-color: #7fb414;
+  color: #282c34;
 }
 
 @media (prefers-reduced-motion: no-preference) {
